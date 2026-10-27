@@ -1,0 +1,25 @@
+# Private family records and credentials
+/data/
+.env
+.env.*
+!.env.example
+cloudbaserc.json
+cloud-setup-token.txt
+/cloud/twin-adventure-api/bootstrap.json
+*setup-token*.txt
+首次使用口令.txt
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.key
+
+# Generated files and dependencies
+node_modules/
+**/node_modules/
+*.zip
+*.log
+.DS_Store
+.cache/
+coverage/

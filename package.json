@@ -1,0 +1,22 @@
+{
+  "name": "twin-adventure",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "cloud:prepare": "node --env-file=.env scripts/prepare-cloud.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "description": "A mobile-first fantasy habit tracker for families, with parent-managed rewards, screen-time wallets and collectible equipment.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AIpanda1129-lab/twin-adventure.git"
+  },
+  "homepage": "https://github.com/AIpanda1129-lab/twin-adventure#readme",
+  "author": "AIpanda1129-lab"
+}

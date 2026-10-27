@@ -1,0 +1,33 @@
+{
+  "version": "2.0",
+  "envId": "YOUR_CLOUDBASE_ENV_ID",
+  "functionRoot": "cloud",
+  "functions": [
+    {
+      "name": "twin-adventure-api",
+      "timeout": 30,
+      "memorySize": 256,
+      "runtime": "Nodejs20.19",
+      "type": "HTTP",
+      "installDependency": false,
+      "envVariables": {
+        "TCB_ENV": "YOUR_CLOUDBASE_ENV_ID",
+        "ALLOWED_ORIGIN": "https://your-own-website.example",
+        "DB_COLLECTION": "twin_adventure_private"
+      }
+    }
+  ],
+  "app": {
+    "serviceName": "twin-adventure",
+    "root": "./public",
+    "framework": "static",
+    "installCommand": "",
+    "buildCommand": "",
+    "outputDir": ".",
+    "deployPath": "/twin-adventure",
+    "ignore": [
+      ".DS_Store",
+      "preview-mobile.html"
+    ]
+  }
+}
